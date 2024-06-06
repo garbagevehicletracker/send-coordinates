@@ -1,0 +1,109 @@
+/* General container for flexbox layout */
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Map container */
+.mapContainer {
+  flex: 1;
+  height: 50vh; /* Adjust height as needed */
+}
+
+/* Sidebar container */
+.sidebar {
+  background-color: #f1e3e3;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile image styling */
+.profileImage {
+  width: 100px !important;
+  height: 100px !important;
+  border-radius: 50%;
+  margin-top: 20px;
+  margin-left: 50px;
+  margin-right: 50px !important;
+}
+
+/* Profile info styling */
+.profileInfo {
+  text-align: center;
+}
+
+/* Heading styling */
+.heading {
+  font-size: 1.4rem !important;
+  margin-bottom: 5px;
+  color: rgb(0, 100, 0);
+}
+.display-text{
+  /* font-size: 1.2rem !important; */
+  margin-bottom: 5px;
+  color: rgb(0, 80, 0);
+
+}
+
+/* Coordinates container styling */
+.coordinatesContainer {
+  background-color: #215018 !important;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Coordinates text styling */
+.coordinates {
+  font-size: 20px;
+}
+
+/* Mobile specific styling */
+@media (max-width: 600px) {
+  /* Adjust map height for mobile view */
+  .mapContainer {
+    height: 40vh; /* Adjust height as needed */
+  }
+
+  /* Flex direction for mobile view */
+  .container {
+    flex-direction: column;
+  }
+
+  /* Sidebar styling for mobile view */
+  .sidebar {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f4f4f4;
+  }
+
+  /* Profile image size for mobile view */
+  .profileImage {
+    width: 60px;
+    height: 60px;
+  }
+
+  /* Profile info alignment for mobile view */
+  .profileInfo {
+    text-align: left;
+    margin-left: 10px;
+  }
+
+  /* Adjust heading size for mobile view */
+  .heading {
+    font-size: 1.2rem;
+  }
+
+  /* Coordinates container for mobile view */
+  .coordinatesContainer {
+    background-color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+}
