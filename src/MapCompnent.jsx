@@ -239,7 +239,7 @@ const NoDustbinMessage = styled.div`
 const MapComponent = ({ latitude, longitude, areaId }) => {
   const { isLoaded } = useJsApiLoader({
     id: "google-map-script",
-    googleMapsApiKey: "AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg",
+    googleMapsApiKey: "",
   });
 
   const [map, setMap] = useState(null);
